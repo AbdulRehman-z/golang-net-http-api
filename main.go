@@ -54,7 +54,7 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", rootHandler)
 	http.HandleFunc("/message", messageHandler)
-	http.HandleFunc("/form", formHandler)
+	http.HandleFunc("/username", formHandler)
 	fmt.Printf("Listening on port 8000")
 	http.ListenAndServe(":8000", nil)
 }
